@@ -1,2 +1,2 @@
 # CTR-ABtest
-## README WILL BE UPDATED in 2 WEEKS
+## README will be updated in 2 days.
