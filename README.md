@@ -1,17 +1,26 @@
 <h1 align='center'>WEB PAGE DESIGN A/B TEST</h1> 
 
-## Introduction
-
 B2B businesses today are unhappy with all the unqualified leads they get per month, eCommerce stores, on the other hand, are struggling with a high cart abandonment rate. Meanwhile, media and publishing houses are also dealing with low viewer engagement. These core conversion metrics are affected by some common problems like leaks in the conversion funnel, drop-offs on the payment page, etc. In this project I will showcase how a web page's design was A/B tested to check which one led to more clicks or as the company obtained the data called in "conversions".
 
 ## What is A/B Testing?
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 A/B tests are one of the most powerful tools in a Data Scientists arsenal which is widely used in the industry to test features/products on a small group of people to perceive how it will be received by the end customer. A Product Data Scientists competency in A/B testing is at the core of their work. One thing to remember is that not every idea needs to be A/B tested. Some ideas can be expensive to test even on a small scale, so we have to be wise about which ideas to actually test on. This particular company decided this idea was worth testing and they have collected the data. I will be analyzing the data and conducting a statistical hypothesis test to determine whether the differences in user preference of one web page design over the other, are statistically significant or not.
+</details>
 
 ## The Data
-
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 The dataset I have used contains around 300 thousand rows, where each row is a user who has been put into either a Control or Variation group (called treatment group in the data). The control group has been shown the old web page design and the treatment group has been shown the new webpage design. The last column in the dataset signifies whether the user has 'converted' or not. Conversion here stands for any action the business wants a customer/user to make which results in a positive outcome.
 
 The dataset I have used can be found at this URL: https://www.kaggle.com/zhangluyuan/ab-testing
+</details>
 
 ## Data Cleaning and EDA
 
@@ -56,13 +65,23 @@ Also I checked if the number of users in the two groups are divided equally or n
 <p align="center">
   <img src="https://github.com/CSmahesh04/CTR_AB_Test/blob/main/Images/pie_chart.PNG" width=250>
 </p>
+</details>
 
 ## Chi-Squared Test
-
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 Since we are dealing with the conversion variable, which has a discrete value, it is considered a **Bernoulli Distribution**. That means an user will either convert (1) or not convert(0). The Chi-Squared test is a perfect testing method for values in the **Bernoulli Distribution**. We calculate the chi-squared test statistic and use that to calculate the p-value. Then the p-value is compared against the level of significance to check whether there is a significant difference between the two groups.
+</details>
 
 ## Data Preparation and Results
-
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 Now that we have cleaned the data, it is time to conduct a statistical hypothesis test. The dataset has to be in a specific format to use the **_scipy_** library to do the Chi-Squared test on our data. Once the data is in the correct format, the test can be done using the **_scipy_** library. It automatically calculates both the chi-squared statistic and the p-value.
 
 The p-value turns out to be **0.1898**, which translates to **19%**. The p-value is greater than _alpha_, at a 5% level of significance (we have to look alpha up in a table). This means we don't reject the null hypothesis. The null hypothesis here being, there is a statistically significant difference between the conversion rates for the two web pages. Thus, by rejecting the null hypothesis, it has been established that there is no preference for the user of one web page over the other.
@@ -72,12 +91,17 @@ The p-value turns out to be **0.1898**, which translates to **19%**. The p-value
 </p>
 
 For a quick verification, I conducted a sanity check where I calculated the conversion rates between the two groups and the difference between them is minimal at **0.0013**. Since the total number of people in both groups is the same, this means there wasn't any problem with the Chi-Squared test itself. 
+</details>
 
 ## Technologies Used
-
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 1. Python
 2. Pandas
 3. Numpy
 4. Matplotlib
 5. Scipy
- 
+</details>
