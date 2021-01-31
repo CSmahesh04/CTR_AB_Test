@@ -63,15 +63,15 @@ Since we are dealing with the conversion variable, which has a discrete value, i
 
 ## Data Preparation and Results
 
-Now that we have cleaned the data, it is time to conduct a statistical hypothesis test. The dataset has to be in a specific format to use the _scipy_ library to do the Chi-Squared test on our data. Once the data is in the correct format, the test can be done using the _scipy_ library. It automatically calculates both the chi-squared statistic and the p-value.
+Now that we have cleaned the data, it is time to conduct a statistical hypothesis test. The dataset has to be in a specific format to use the **_scipy_** library to do the Chi-Squared test on our data. Once the data is in the correct format, the test can be done using the **_scipy_** library. It automatically calculates both the chi-squared statistic and the p-value.
 
-The p-value turns out to be 0.1898, which translates to 19%. The p-value is greater than _alpha_, at a 5% level of significance (we have to look alpha up in a table). This means we don't reject the null hypothesis. The null hypothesis here being, there is a statistically significant difference between the conversion rates for the two web pages. Thus, by rejecting the null hypothesis, it has been established that there is no preference for the user of one web page over the other.
+The p-value turns out to be **0.1898**, which translates to **19%**. The p-value is greater than _alpha_, at a 5% level of significance (we have to look alpha up in a table). This means we don't reject the null hypothesis. The null hypothesis here being, there is a statistically significant difference between the conversion rates for the two web pages. Thus, by rejecting the null hypothesis, it has been established that there is no preference for the user of one web page over the other.
 <h5 align="center">P-value using Scipy</h5>
 <p align="center">
   <img src="https://github.com/CSmahesh04/CTR_AB_Test/blob/main/Images/p_value.PNG" width=550>
 </p>
 
-For a quick verification, I conducted a sanity check where I calculated the conversion rates between the two groups and the difference between them is minimal at 0.0013. Since the total number of people in both groups is the same, this means there wasn't any problem with the Chi-Squared test itself. 
+For a quick verification, I conducted a sanity check where I calculated the conversion rates between the two groups and the difference between them is minimal at **0.0013**. Since the total number of people in both groups is the same, this means there wasn't any problem with the Chi-Squared test itself. 
 
 ## Technologies Used
 
