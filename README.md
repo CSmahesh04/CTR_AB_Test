@@ -21,7 +21,7 @@ After importing all the necessary libraries and reading in the data, it is alway
 <p align="center">
   <img src="https://github.com/CSmahesh04/CTR_AB_Test/blob/main/Images/dataset.PNG" width=550>
 </p>
-There are exactly 294,478 rows and 5 columns in the dataset. The five columns have only two data types: object and int64. The **_timestamp_** column is not converted to a better date-time format as we will not require it for A/B testing.
+There are exactly 294,478 rows and 5 columns in the dataset. The five columns have only two data types: object and int64. The <strong>timestamp</strong> column is not converted to a better date-time format as we will not require it for A/B testing.
 <h5 align="center">Data Types</h5>
 <p align="center">
   <img src="https://github.com/CSmahesh04/CTR_AB_Test/blob/main/Images/datatypes.PNG" width=400>
