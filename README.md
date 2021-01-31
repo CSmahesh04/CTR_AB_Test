@@ -1,4 +1,4 @@
-<h1 align='center'>Web Page Design A/B Test</h1> 
+<h1 align='center'>WEB PAGE DESIGN A/B TEST</h1> 
 
 ## Introduction
 
