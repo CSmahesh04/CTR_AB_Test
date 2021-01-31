@@ -23,7 +23,11 @@ The dataset I have used can be found at this URL: https://www.kaggle.com/zhanglu
 </details>
 
 ## Data Cleaning and EDA
-
+<details>
+<a name="File_Description"></a>
+<summary>Show/Hide</summary>
+<br>
+  
 After importing all the necessary libraries and reading in the data, it is always a good idea to take a look at the dataset and the various data types it contains. 
 
 <h5 align="center">The Dataset</h5>
