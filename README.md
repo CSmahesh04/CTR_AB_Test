@@ -1,4 +1,4 @@
-<h1 align='center'>WEB PAGE DESIGN A/B TEST</h1> 
+<h1 align='center'>WEB PAGE DESIGN A/ TEST</h1> 
 
 B2B businesses today are unhappy with all the unqualified leads they get per month, eCommerce stores, on the other hand, are struggling with a high cart abandonment rate. Meanwhile, media and publishing houses are also dealing with low viewer engagement. These core conversion metrics are affected by some common problems like leaks in the conversion funnel, drop-offs on the payment page, etc. In this project I will showcase how a web page's design was A/B tested to check which one led to more clicks or as the company obtained the data called in "conversions".
 
